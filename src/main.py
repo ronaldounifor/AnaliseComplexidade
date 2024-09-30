@@ -15,3 +15,18 @@ def sum_elements(arr):
 arr = [1, 2, 3, 4, 5]
 result = sum_elements(arr)
 print(result)
+
+# T(n) = 2T(n/2) + 1
+
+# a = 2
+# b = 2
+
+# n^(log_b(a)) = n^(log_2(2)) = n
+
+#  n       vs        1
+
+# CASO 1: 1 = O(n^0,9) p/ε = 0,1
+# CASO 2: 1 = Θ(n)
+# CASO 3: 1 = Ω(n^1,1) p/ε = 0,1
+
+# Θ(n)
