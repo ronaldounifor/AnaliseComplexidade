@@ -1,11 +1,7 @@
 public class App {
     public static void main(String[] args) {
-        new GerenteMatriz(
-            new int[][]{
-                {3, 2, 1},
-                {2, 9, 5},
-                {2, 7, 8}
-            }
-        ).procurarUm(3);
+        int resultado = new Pesquisa().pesquisaBinaria(new int[]{2, 3, 5, 9}, 2);
+        
+        System.out.println("Achei na posicao "+resultado);
     }
 }
