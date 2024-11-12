@@ -1,18 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        int resultado = new Pesquisa().pesquisaBinaria(new int[] {2, 3, 5, 7, 9}, 3);
+        int n = 500;
 
-        System.out.println("Achou na posicao " + resultado);
+        Fibonacci fib = new Fibonacci(n);
 
-
-
-
-        // new GerenteMatriz(
-        //     new int[][]{
-        //         {1, 2, 3},
-        //         {2, 5, 7},
-        //         {8, 9, 3}
-        //     }
-        // ).procurarUm(2);
+        System.out.println("Calculando...");
+        double resultado = fib.calcularRecTopDownPD(n);
+        System.out.println(resultado);
     }
 }
